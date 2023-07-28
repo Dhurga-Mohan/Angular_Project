@@ -1,0 +1,63 @@
+<div class='cartOuter' *ngIf="Items.length">
+<div class="cart_back">
+    <div class="cart-items">
+        <div class="cart-items-header">
+            <h3>My Cart</h3>
+            <button class="addtocart" (click)="cartClr()">Clear cart</button>
+        </div>
+        <div>
+        <table>
+            
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th>Image</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+        
+            <tbody >
+                <tr *ngFor="let item of Items; let i=index">
+                    <td>{{i+1}}</td>
+                    <td><img width="100px" height="100px" src="{{item.image}}"></td>
+                    <td>{{item.title}}</td>
+                    <td>
+                        <!-- <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select> -->
+                        <select [(ngModel)]="selectedOption">
+                            <option *ngFor="let o of options">
+                               {{o.value}}
+                            </option>
+                         </select>
+                    </td>
+                    <td>{{item.price}}</td>
+                    <td>{{item.price}}*{{selectedOption}}</td>
+                    <td><button class="removeCart"(click)=remove(i)>Remove</button></td>
+                </tr>
+            </tbody>
+            </table>
+            <br/>
+      
+        </div>
+    </div>
+    <div class="ShoppingDiv">
+        <button class="ShoppingButton" [routerLink]="['']">Continue Shopping</button>
+        <button class="ShoppingButton" [routerLink]="['/checkout']" [disabled]="(!Items.length)" (click)="checkOut()" >Checkout</button>
+    </div>
+</div>
+</div>
+<div class="empty-cart" *ngIf="!Items.length">
+    <div class="cart-items">
+        <img class="cart-items-img" src="/assets/img/empty-cart.jpg">
+        <button class="addtocart1" [routerLink]="['']">Shop now</button>
+    </div>
+</div>

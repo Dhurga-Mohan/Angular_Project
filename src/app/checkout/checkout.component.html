@@ -1,0 +1,28 @@
+
+<div id="formContainer">
+    <form id="form" [formGroup]="checkoutForm">
+        <fieldset>
+            <h1>Checkout Form</h1>
+            <div id="fullName">
+                <input type="text" formControlName="fName" id="fName" placeholder="First Name" required />
+                <input type="text" formControlName="lName" id="lName" placeholder="Last Name" required />
+            </div>
+            <div id="otherInputs">
+            
+                <input type="address" formControlName="address" id="address" placeholder="Address" required />
+                <input type="tel" formControlName="phone" id="phone" placeholder="Telephone Number" required />
+                <input type="email" formControlName="email" id="email" placeholder="Email Address" required />
+                <input type="city" formControlName="city" id="city" placeholder="City" required />
+                <input type="state" formControlName="state" id="state" placeholder="State" required />
+                <input type="pincode" formControlName="pincode" id="pincode" placeholder="Pincode" required />
+            </div>
+            <!-- <input type="submit" name="submit" class="submit"  /> -->
+            <div class="button-container">
+                <button class="submit" [routerLink]="['']">Back</button>
+                <button class="submit" type="reset">Reset</button>
+                <button class="submit" [routerLink]="['/complete-order']" (click)="completeOrder()">Complete Order</button>
+            </div>
+        </fieldset>
+
+    </form>
+</div>

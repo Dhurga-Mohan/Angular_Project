@@ -1,0 +1,30 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+<div class><ul class="links-container">
+    <li class="link-item"><a class="link" [ngClass]="activeType === 'All Products' ? 'active':''" (click)="setActiveType('All Products', '')">All Products</a></li>
+    <li class="link-item"><a class="link" [ngClass]="activeType === 'Women' ? 'active':''" (click)="setActiveType('Women', 'women\'s clothing')">women</a></li>
+    <li class="link-item"><a class="link" [ngClass]="activeType === 'Men' ? 'active':''" (click)="setActiveType('Men', 'men\'s clothing')">men</a></li>
+    <li class="link-item"><a class="link" [ngClass]="activeType === 'electronics' ? 'active':''" (click)="setActiveType('electronics', 'electronics')">electronics</a></li>
+    <li class="link-item"><a class="link" [ngClass]="activeType === 'Jewelry' ? 'active':''" (click)="setActiveType('Jewelry', 'jewelery')">accessories</a></li>
+</ul>
+</div></div></div>
+<div class="products-contain">
+    <div class="product-card" *ngFor="let item of filteredProducts">
+    <div class="image">    
+        <img src="{{item.image}}">
+    </div>    
+    <div class="title">
+        <h5>{{item.title}}</h5>
+    </div>
+    <div class="description">   
+        <p>{{item.description}}</p>
+        
+    </div>
+    <div class="price">
+        <p><strong>{{item.price}} $</strong></p>
+    </div>
+    <div class="addtocart">
+        <button (click)="addItems(item)">Add to cart</button>
+    </div>
+    </div>
+</div>

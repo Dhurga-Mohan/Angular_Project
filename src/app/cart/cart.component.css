@@ -1,0 +1,189 @@
+.cartOuter {
+    /* background-image: url('../Assets/Images/WallFree.jpg');
+    background-position: center;
+    background-size: cover; */
+    color: black;
+    height: 100vh;
+    
+  }
+  
+  table{
+    /* margin-left: 13%; */
+    width: 100%;
+    padding:2%;
+  }
+  th {
+    padding:2%;
+  }
+  td{
+    padding:2%;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+  }
+  thead{
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-radius: 3px;
+      padding: 25px 30px;
+      justify-content: space-between;
+      margin-bottom: 25px;
+  }
+  
+  
+  .cart-items-header{
+    padding-bottom: 10px;
+    display: flex;
+  }
+  
+  .cart_back{
+    
+        /* background-color: rgb(184, 234, 236); */
+        background-size: cover;
+        background-attachment: scroll;
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        padding-top: 5%;
+        padding-right: 50px;
+        color: black;
+        text-align: center;
+        align-items: center;
+    }
+    .cart-items-img{
+      width: 100%;
+  }
+  .addtocart1{
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #e68ec8db;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-left: 40%;
+  }
+  .addtocart{
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #e68ec8db;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-left: 70%;
+  }
+  .ShoppingDiv{
+    display: flex;
+  }
+  .ShoppingButton{
+      width: 25%;
+      height: 40px;
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background: #e68ec8db;
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 15px;
+      border-radius: 10px;
+      margin-left: 15%;
+  }
+  .removeCart{
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #e68ec8db;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+  /* .priceButton {
+    margin-top: 1%;
+    margin-left: 70%;
+  } */
+  
+  /* h1 {
+    text-align: center;
+    margin: 0px auto;
+    padding-bottom: 10px;
+    max-width: 600px;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    margin: 0px;
+  }
+  
+  #formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #form {
+    max-width: 600px;
+    background-image: linear-gradient(to right, #64B2CC 30%, #657980);
+  }
+  
+  fieldset {
+    border-width: 5px;
+    padding: 10px 20px 20px 20px;
+    border-color: #f2f2f2;
+    justify-content: center;
+  }
+  
+  input {
+    margin: 10px 10px 10px 0px;
+    padding: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  #fullName {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #fullName input {
+    flex-grow: 1;
+  }
+  
+  #otherInputs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #otherInputs input {
+    width: 100%;
+  }
+  
+  #submit {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 0px;
+    width: 200px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #3E6F80;
+    color: white;
+    cursor: pointer;
+  } */

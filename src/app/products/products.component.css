@@ -1,0 +1,103 @@
+.links-container{
+    width: 79%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #d1d1d1;
+    background-color: #e68ec83b;
+}
+
+.link{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #970856;
+    opacity: 0.5;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.link:hover{
+    opacity: 1;
+}
+.card-top{
+    background-color: #e68ec83b;
+    padding: 15px;
+}
+
+.products-contain{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap  ;
+    justify-content: space-evenly;
+}
+
+.product-card{
+    background-color: white;
+    border: 1em;
+    border-radius: 10px;
+    display: grid;
+    width: 220px;
+    height: 400px;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: 0px 10px 5px rgb(198, 172, 180);
+    margin-bottom: 20px;
+    
+}
+.products-contain p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.description{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.image img{
+    width:200px;
+    height:200px;
+    transition: 0.3s ease-in-out;
+}
+
+.image img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+.addtocart{
+    padding: 10px 15px;
+    color: black;
+    background-color: rgb(245, 209, 215);
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin:0px 20% 5% 15%;
+    text-align: center;
+}
+
+.addtocart button{
+    background: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    
+}
+
+.active, .addtocart:hover{
+    background-color: pink;
+}
+
+.active, .item:hover{
+    background-color: #e68ec8;
+}
+.title h5{
+    margin-top: 5%;
+}

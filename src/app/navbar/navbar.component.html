@@ -1,0 +1,15 @@
+<nav class="navbar">
+<div class="nav">
+    <div class="navitem1"><img src="assets/img/dark-logo.jpg" class="brand-logo" [routerLink]="['']" alt=""></div>
+    <div class="nav-items">
+        <div class="search">
+            <input type="text" class="search-box" placeholder="search brand, product">
+            <button class="search-btn" onclick="searchData()">search</button>
+        </div>
+        <!-- <div><button class="log-in" *ngIf="!isUserLoggedIn" [routerLink]="['log-in']" >  <img src="assets/img/user.png" alt="">  </button></div> -->
+        <a *ngIf="!isUserLoggedIn" [routerLink]="['/log-in']"><img src="assets/img/user.png" alt=""></a>
+        <div><a class="cartImg" [routerLink]="['cart']"><img src="assets/img/cart.png" alt=""></a><span class="notify-count" >{{totalProduct}}</span></div>
+    </div>
+</div>
+
+</nav>
